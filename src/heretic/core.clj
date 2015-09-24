@@ -91,11 +91,11 @@
   [& args]
   (dotimes [_ 10]
     (let [fs (finalString)]
-      (println "Original")
-      (time (a-to-an-original fs))
+      (println "New")
+      (time (a-to-an fs))
       (println "Second")
       (time (a-to-an-second fs))
-      (println "New")
-      (time (a-to-an fs))))
+      (println "Original")
+      (time (a-to-an-original fs))))
   (println (a-to-an (finalString))))
 
